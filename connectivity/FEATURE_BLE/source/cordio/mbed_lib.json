@@ -49,11 +49,11 @@
         },
         "desired-att-mtu": {
             "help": "Desired ATT_MTU, this needs to be between 23 and 517 (inclusive). The effective ATT_MTU is limited by rx-acl-buffer-size (minus 4 bytes for the header).",
-            "value": 23
+            "value": 250
         },
         "rx-acl-buffer-size": {
             "help": "Size of the buffer holding the reassembled complete ACL packet. This will limit the effective ATT_MTU (to its value minus 4 bytes for the header). The size of the buffer must be small enough to be allocated from the existing cordio pool. If this value is increased you may need to adjust the memory pool.",
-            "value": 70
+            "value": 255
         },
         "max-prepared-writes": {
             "help": "Number of queued prepare writes supported by server.",
