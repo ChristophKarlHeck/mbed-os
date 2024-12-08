@@ -3455,8 +3455,7 @@
             }
         },
         "macros_add": [
-            "CORE_CM7",
-            "MBED_SPLIT_HEAP"
+            "CORE_CM7"
         ]
     },
     "NUCLEO_H745ZI_Q": {
@@ -3522,8 +3521,7 @@
             }
         },
         "macros_add": [
-            "CORE_CM7",
-            "MBED_SPLIT_HEAP"
+            "CORE_CM7"
         ]
     },
     "MCU_STM32H747xI_CM4": {
@@ -9819,6 +9817,21 @@
             // voltages higher than the I/O voltage are illegal for the analog pins
             // (so the ADC can never read 100%).
             "default-adc-vref": 3.3
+        },
+        "memory_banks": {
+            "QSPI_FLASH": {
+                "access": {
+                    "execute": true,
+                    "peripheral": false,
+                    "read": true,
+                    "secure": false,
+                    "write": false
+                },
+                "default": true,
+                "startup": true,
+                "size": 0x200000, // 2MiB
+                "start": 0x10000000
+            }
         },
         "image_url": "https://cdn11.bigcommerce.com/s-2fbyfnm8ev/images/stencil/1280x1280/products/1212/4275/Pico3__75642.1611086462.jpg?c=2"
     },
